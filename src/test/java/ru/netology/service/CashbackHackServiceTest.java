@@ -1,13 +1,12 @@
 package ru.netology.service;
 
-import org.junit.Test;
-
 import static org.junit.Assert.*;
+
 public class CashbackHackServiceTest {
 
     CashbackHackService service = new CashbackHackService();
 
-    @Test
+    @org.junit.Test
     public void remainZero() {
         int expected = 0;
         int actual = service.remain(1000);
@@ -15,7 +14,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void remainOne() {
         int expected = 1;
         int actual = service.remain(999);
@@ -23,7 +22,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void remainOneThousand() {
         int expected = 1000;
         int actual = service.remain(0);
@@ -31,7 +30,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void remainSome() {
         int expected = 555;
         int actual = service.remain(445);
